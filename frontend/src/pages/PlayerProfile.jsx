@@ -30,7 +30,7 @@ function PlayerProfile() {
       try {
 
         const response = await fetch(
-          `http://127.0.0.1:8000/players/profile/${name}`
+          `https://chessstats-jwakvg.fly.dev/players/profile/${name}`
         );
 
         const playerData =

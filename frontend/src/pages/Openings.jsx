@@ -39,7 +39,7 @@ function Openings() {
 
         const statsResponse =
           await fetch(
-            "http://127.0.0.1:8000/openings/stats"
+            "https://chessstats-jwakvg.fly.dev/openings/stats"
           );
 
         const statsData =
@@ -49,7 +49,7 @@ function Openings() {
 
         const openingsResponse =
           await fetch(
-            "http://127.0.0.1:8000/openings/top"
+            "https://chessstats-jwakvg.fly.dev/openings/top"
           );
 
         const openingsData =
@@ -91,7 +91,7 @@ function Openings() {
 
     const response =
       await fetch(
-        `http://127.0.0.1:8000/openings/${eco}`
+        `https://chessstats-jwakvg.fly.dev/openings/${eco}`
       );
 
     const data =
@@ -100,7 +100,7 @@ function Openings() {
     console.log(data);
     const playerResponse =
       await fetch(
-        `http://127.0.0.1:8000/openings/${eco}/top-player`
+        `https://chessstats-jwakvg.fly.dev/openings/${eco}/top-player`
       );
 
     const playerData =

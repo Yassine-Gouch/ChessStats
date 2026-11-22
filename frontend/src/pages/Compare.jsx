@@ -43,7 +43,7 @@ function Compare() {
     try {
 
       const response = await fetch(
-        `http://127.0.0.1:8000/players/search?q=${value}`
+        `https://chessstats-jwakvg.fly.dev/players/search?q=${value}`
       );
 
       const data = await response.json();
@@ -75,7 +75,7 @@ function Compare() {
     try {
 
       const response = await fetch(
-        `http://127.0.0.1:8000/players/search?q=${value}`
+        `https://chessstats-jwakvg.fly.dev/players/search?q=${value}`
       );
 
       const data = await response.json();
@@ -110,7 +110,7 @@ function Compare() {
     try {
 
       const response = await fetch(
-        `http://127.0.0.1:8000/players/compare/${playerA}/${playerB}`
+        `https://chessstats-jwakvg.fly.dev/players/compare/${playerA}/${playerB}`
       );
 
       const data = await response.json();
@@ -118,7 +118,7 @@ function Compare() {
       setResult(data);
       const historyAResponse =
   await fetch(
-    `http://127.0.0.1:8000/players/rating-history/${playerA}`
+    `https://chessstats-jwakvg.fly.dev/players/rating-history/${playerA}`
   );
 
 const historyA =
@@ -126,7 +126,7 @@ const historyA =
 
 const historyBResponse =
   await fetch(
-    `http://127.0.0.1:8000/players/rating-history/${playerB}`
+    `https://chessstats-jwakvg.fly.dev/players/rating-history/${playerB}`
   );
 
 const historyB =

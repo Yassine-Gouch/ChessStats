@@ -39,7 +39,7 @@ function Predict() {
     try {
 
       const response = await fetch(
-        `http://127.0.0.1:8000/players/search?q=${value}`
+        `https://chessstats-jwakvg.fly.dev/players/search?q=${value}`
       );
 
       const data =
@@ -69,7 +69,7 @@ function Predict() {
     try {
 
       const response = await fetch(
-        `http://127.0.0.1:8000/players/search?q=${value}`
+        `https://chessstats-jwakvg.fly.dev/players/search?q=${value}`
       );
 
       const data =
@@ -114,7 +114,7 @@ function Predict() {
 
       const response =
         await fetch(
-          "http://127.0.0.1:8000/predict",
+          "https://chessstats-jwakvg.fly.dev/predict",
           {
             method: "POST",
             headers: {
