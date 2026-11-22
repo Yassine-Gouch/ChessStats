@@ -1,5 +1,4 @@
-const API_URL = "http://127.0.0.1:8000";
-
+const API_URL = "https://chessstats-jwakvg.fly.dev";
 export async function getInfo() {
 
   const response = await fetch(
