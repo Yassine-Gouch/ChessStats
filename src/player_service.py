@@ -1,7 +1,7 @@
 import duckdb
 
 
-DB_PATH = "data/processed/chess.duckdb"
+DB_PATH = "data/processed/chess_portfolio.duckdb"
 
 
 def get_connection():
